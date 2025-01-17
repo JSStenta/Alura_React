@@ -4,12 +4,16 @@ import Header from "./componentes/Header/Header"
 import Formulario from './componentes/Formulario/Formulario';
 import MiOrg from './componentes/MiOrg';
 import Equipo from './componentes/Equipo';
+import Footer from './componentes/Footer';
 
 function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false)
-  const [colaboradores, actualizarColaboradores] = useState([])
-  //Ternario --> condicion ? seMuestra : noSeMuestra
-  // condicion && seMuestra
+  const [colaboradores, actualizarColaboradores] = useState([{
+    equipo: "Front End",
+    foto: "https://github.com/JSStenta.png",
+    nombre: "Juan Sebastian Stentahttps://www.linkedin.com/",
+    puesto: "Desarrollador Front End",
+  }])
 
   const cambiarMostrar = () => {
     actualizarMostrar(!mostrarFormulario)
@@ -83,6 +87,8 @@ function App() {
         />
         )
       }
+
+      <Footer />
 
 
     </div>
