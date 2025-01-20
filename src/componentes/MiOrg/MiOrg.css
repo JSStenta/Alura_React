@@ -13,8 +13,9 @@
     border-bottom: 4px solid #6278F7;;
 }
 
-.orgSection img{
+.orgSection .boton{
     position: absolute;
-    right: 30%;
+    right: 25%;
     cursor: pointer;
+    font-size: 2rem;
 }
